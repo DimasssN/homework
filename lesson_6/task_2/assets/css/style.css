@@ -87,7 +87,7 @@ input[type=checkbox] {
     margin: 4px;
 }
 
-input[type=checkbox]:checked + div {
+input[type=checkbox]:checked + span {
     color: #9e9bb1;
     text-decoration: line-through;
 }
