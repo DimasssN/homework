@@ -79,7 +79,7 @@ li:hover:after {
     bottom: 0;
 }
 
-label div {
+label span {
     display: inline-block;
 }
 
