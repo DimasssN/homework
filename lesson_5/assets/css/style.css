@@ -55,12 +55,16 @@ body {
     margin-bottom: 30px;
 }
 
+.icon:after {
+    background-image: url(/assets/img/sprite.png);
+    background-repeat: no-repeat;
+}
+
 .icon_1:after {
     content: '';
     display: block;
     margin-top: 23px;
     margin-left: 17px;
-    background: url(/img/sprite.png);
     width: 38px;
     height: 40px;
 }
@@ -70,7 +74,7 @@ body {
     display: block;
     margin-top: 23px;
     margin-left: 20px;
-    background: url(/img/sprite.png) -140px top;
+    background-position: -140px top;
     width: 38px;
     height: 40px;
 }
@@ -80,7 +84,7 @@ body {
     display: block;
     margin-top: 23px;
     margin-left: 23px;
-    background: url(/img/sprite.png) right top;
+    background-position: right top;
     width: 44px;
     height: 40px;
 }
@@ -94,7 +98,7 @@ footer {
     margin: 0 auto;
     height: 100px;
     width: 200px;
-    background: url(/img/kasper.png) center center no-repeat;
+    background: url(/assets/img/kasper.png) center center no-repeat;
     margin-bottom: 13px;
 }
 
@@ -125,26 +129,30 @@ footer ul li {
     margin: 0 6px;
 }
 
+a div {
+    background-image: url(/assets/img/sprite_casper.png);
+    background-repeat: no-repeat;
+}
+
 .facebook {
-    background: url(/img/sprite_casper.png) no-repeat;
     width: 20px;
     height: 20px;
 }
 
 .twitter {
-    background: url(/img/sprite_casper.png) -37px 0px no-repeat;
+    background-position: -37px 0px;
     width: 20px;
     height: 20px;
 }
 
 .googleplus {
-    background: url(/img/sprite_casper.png) -86px 0px no-repeat;
+    background-position: -86px 0px;
     width: 20px;
     height: 20px;
 }
 
 .dribble {
-    background: url(/img/sprite_casper.png) -127px 0px no-repeat;
+    background-position: -127px 0px;
     width: 20px;
     height: 20px;
 }
