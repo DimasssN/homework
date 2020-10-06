@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #898f99;
+    
+}
+
+.header_top {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin: 165px 0 15px;
+}
+
+h1 {
+    color: #0ec8cb;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 47px;
+    letter-spacing: 5px;
+    margin-bottom: 28px;
+}
+
+.description {
+    width: 520px;
+    padding: 0 5px;
+    margin: 0 auto 104px;
+    font-size: 18px; 
+    line-height: 26px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.wrap {
+    background-color: #f7f7f7;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    height: 420px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    padding: 0 27px;
+    color: #777;
+    height: 100%;
+}
+
+.icon {
+    display: inline-block;
+    width: 68px;
+    height: 66px;
+    margin: 55px auto 47px;
+    background-image: url(/assets/img/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.icon_text {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: #1b1b1b;
+}
+
+.item p {
+    font-size: 14px;
+    margin-bottom: 86px;
+}
+
+.icon_2 {
+    background-position: -125px top;
+    margin-bottom: 34px;
+}
+
+.icon_3 {
+    background-position: -257px top;
+}
+
+.icon_4 {
+    background-position: right top;
+}
+
+.item:hover {
+    background-color: #0ec8cb;
+    border: 1px solid #84dbdc;
+    color: #fff;
+}
+
+.item:hover .icon_text {
+    color: #fff;
+}
+
+.item:hover .icon_1 {
+    background-position: left bottom;
+}
+
+.item:hover .icon_2 {
+    background-position: -125px bottom;
+}
+
+.item:hover .icon_3 {
+    background-position: -257px bottom;
+}
+
+.item:hover .icon_4 {
+    background-position: right bottom;
+}
+
+
+
+
