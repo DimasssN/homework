@@ -60,7 +60,7 @@ body {
 }
 
 .icon:after {
-    background-image: url(/assets/img/sprite_services.png);
+    background-image: url(../img/sprite_services.png);
     background-repeat: no-repeat;
 }
 

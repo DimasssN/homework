@@ -34,7 +34,7 @@ body {
 
 .wrapper .big {
     background-color: #9d8b5a;
-    background-image: linear-gradient(to top, rgba(10,10,10, 1), rgba(200,200,200, 0.1)), url(/assets/img/foto_1.jpg);
+    background-image: linear-gradient(to top, rgba(10, 10, 10, 1), rgba(200, 200, 200, 0.1)), url(../img/foto_1.jpg);
     background-repeat: no-repeat;
     width: 66%;
     justify-content: flex-end;
@@ -55,22 +55,22 @@ body {
 }
 
 .item_2 .foto {
-    background-image: url(/assets/img/foto_2.jpg);
+    background-image: url(../img/foto_2.jpg);
     background-repeat: no-repeat;
 }
 
 .item_3 .foto {
-    background-image: url(/assets/img/foto_3.jpg);
+    background-image: url(../img/foto_3.jpg);
     background-repeat: no-repeat;
 }
 
 .item_4 .foto {
-    background-image: url(/assets/img/foto_4.jpg);
+    background-image: url(../img/foto_4.jpg);
     background-repeat: no-repeat;
 }
 
 .item_5 .foto {
-    background-image: url(/assets/img/foto_5.jpg);
+    background-image: url(../img/foto_5.jpg);
     background-repeat: no-repeat;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .avatar {
-    background-image: url(/assets/img/avatar.png);
+    background-image: url(../img/avatar.png);
     background-repeat: no-repeat;
     width: 54px;
     height: 54px;
@@ -118,7 +118,7 @@ body {
 }
 
 .load_icon {
-    background-image: url(/assets/img/load.png);
+    background-image: url(../img/load.png);
     background-repeat: no-repeat;
     width: 30px;
     height: 28px;
@@ -128,4 +128,3 @@ body {
 .load span {
     font-weight: bold;
 }
-

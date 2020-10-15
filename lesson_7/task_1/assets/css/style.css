@@ -20,7 +20,6 @@ header {
 
 header p {
     color: #898f99;
-    
 }
 
 .header_top {
@@ -44,7 +43,7 @@ h1 {
     width: 520px;
     padding: 0 5px;
     margin: 0 auto 104px;
-    font-size: 18px; 
+    font-size: 18px;
     line-height: 26px;
     letter-spacing: 1px;
     font-weight: 100;
@@ -79,7 +78,7 @@ h1 {
     width: 68px;
     height: 66px;
     margin: 55px auto 47px;
-    background-image: url(/assets/img/sprite.png);
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
 }
 
@@ -136,7 +135,3 @@ h1 {
 .item:hover .icon_4 {
     background-position: right bottom;
 }
-
-
-
-
