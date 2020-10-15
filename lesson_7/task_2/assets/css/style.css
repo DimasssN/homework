@@ -124,6 +124,7 @@ body {
 
 i {
     font-size: 40px;
+    margin-left: 5px;
 }
 
 .wrap div {
@@ -132,6 +133,10 @@ i {
 }
 
 ul:hover {
-    opacity: 0.75;
+    opacity: .75;
+}
+
+li:not(:hover) {
+    opacity: .85;
     transition: all .2s ease;
 }
