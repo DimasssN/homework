@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1160px;
+}
+
+h1 {
+    margin: 110px 0 60px 0;
+    color: #3c3c3c;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    max-width: 570px;
+    width: 55%;
+    margin: 0 auto 55px;
+    line-height: 28px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 269px;
+    height: 268px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #18b5dc;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    width: 42px;
+    height: 42px;
+    display: block;
+    margin: 0 2px;
+    fill: #5ecbe7;
+    transition: all .2s ease;
+}
+
+.twitter path {
+    fill: #fff;
+}
+
+.twitter:hover {
+    fill: #fff;
+    transition: all .2s ease;
+}
+
+.twitter:hover path {
+    fill: #5ecbe7;
+}
+
+.facebook path {
+    fill: #fff;
+}
+
+.facebook:hover {
+    fill: #fff;
+    transition: all .2s ease;
+}
+
+.facebook:hover path {
+    fill: #5ecbe7;
+}
+
+.google_plus g {
+    fill: #fff;
+}
+
+.google_plus:hover path {
+    fill: #fff;
+    transition: all .2s ease;
+}
+
+.google_plus:hover g path {
+    fill: #5ecbe7;
+    transition: all .2s ease;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.name span {
+    display: block;
+    font-size: 14px;
+    font-weight: lighter;
+}
