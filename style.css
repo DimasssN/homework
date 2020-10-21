@@ -22,6 +22,7 @@ h1 {
 ul {
     list-style: circle;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 ol {
