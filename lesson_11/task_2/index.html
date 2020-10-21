@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nike</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="card card--shadow">
+            <div class="card__logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+            <form action="#" class="card__form">
+                <div class="card__img">
+                    <img class="snicker-img snicker-img--navy" src="assets/img/product.png" alt="product">
+                    <div class="color-product">
+                        <label class="card__bullet">
+                            <input type="radio" name="color" value="navy" class="card__color-btn" checked>
+                            <span class="card__bullet--border card__bullet--navy"></span>
+                        </label>
+
+                        <label class="card__bullet">
+                            <input type="radio" name="color" value="white" class="card__color-btn">
+                            <span class="card__bullet--border card__bullet--white"></span>
+                        </label>
+
+                        <label class="card__bullet">
+                            <input type="radio" name="color" value="pink" class="card__color-btn">
+                            <span class="card__bullet--border card__bullet--pink"></span>
+                        </label>
+
+                        <label class="card__bullet">
+                            <input type="radio" name="color" value="blue" id="blue" class="card__color-btn">
+                            <span class="card__bullet--border card__bullet--blue"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="card__info">
+                    <div class="card__name">
+                        Nike SB Stefan Janoski Max
+                    </div>
+                    <div class="card__desc">
+                        Unisex Skateboarding Shoe
+                    </div>
+                    <div class="card__rating">
+                        <input name="rating" value="5" id="rating-5" type="radio">
+                        <label for="rating-5" class="rating__value"></label>
+
+                        <input name="rating" value="4" id="rating-4" type="radio">
+                        <label for="rating-4" class="rating__value"></label>
+
+                        <input name="rating" value="3" id="rating-3" type="radio" checked>
+                        <label for="rating-3" class="rating__value"></label>
+
+                        <input name="rating" value="2" id="rating-2" type="radio">
+                        <label for="rating-2" class="rating__value"></label>
+
+                        <input name="rating" value="1" id="rating-1" type="radio">
+                        <label for="rating-1" class="rating__value"></label>
+                    </div>
+                    <div class="card__selector">
+                        <select class="selector" id="size">
+                        <option value="">Size</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                        <select class="selector" id="quantity">
+                        <option value="">Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    </div>
+                    <button class="card-button" type="submit">Add to cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
