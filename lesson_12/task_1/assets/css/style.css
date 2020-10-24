@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section_footer {
+    background: url(../images/bg_footer.jpg) center center no-repeat;
+    font-family: 'Raleway', sans-serif;
+    color: #262626;
+    position: relative;
+    top: -22px;
+    width: 100%;
+}
+
+.section_footer h2 {
+    font-size: 90px;
+    text-align: center;
+    margin-bottom: 22px;
+    padding-top: 100px;
+}
+
+.section_footer p {
+    width: 369px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.form_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_data {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    max-width: 500px;
+}
+.form_data input {
+    background-color: rgba(0, 196, 196, .5);
+    margin-bottom: 15px;
+    border: 0;
+    border-left: 5px solid transparent;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    padding-left: 15px;
+    color: #fff;
+    outline-style: none;
+}
+
+.form_data input::placeholder {
+    color: #fff;
+}
+
+.form_data input:focus {
+    border-left: 5px solid #355b82;
+    font-weight: bold;
+    background-color: rgb(0, 196, 196);
+    transition: all .2s ease;
+}
+
+textarea[name="message"] {
+    height: 250px;
+    background-color: rgba(0, 196, 196, .5);
+    color: #fff;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    border-left: 5px solid transparent;
+    outline: none;
+    padding: 20px 0 0 15px;
+    margin-bottom: 15px;
+}
+
+textarea[name="message"]:focus {
+    border-left: 5px solid #355b82;
+    font-weight: bold;
+    background-color: rgb(0, 196, 196);
+    transition: all .2s ease;
+}
+
+textarea[name="message"]::placeholder {
+    color: #fff;
+}
+
+.form_data button {
+    height: 50px;
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: rgba(0, 196, 196, 0.5);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 145px;
+    border: 1px solid transparent;
+}
+
+.form_data button:hover {
+    border: 1px solid #fff;
+    font-weight: bold;
+    transition: all .2s ease;
+    border-radius: 4px;
+}
+
+.form_data button:active {
+    color: #355b82;
+    background-color: #eee;
+}
+
+.contact_info {
+    width: 45%;
+    max-width: 500px;
+    margin-top: -4px;
+}
+
+.contact_info dt {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact_info dd {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 16px;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    background-color: #262626;
+    color: #8a8a8a;
+
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.footer_wrap img {
+    margin-left: -57px;
+}
+
+.footer_red {
+    color: #ff2b58;
+}
