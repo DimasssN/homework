@@ -1,0 +1,109 @@
+.contact {
+  background: url(../images/contact/bg_footer.jpg) center top no-repeat;
+  color: #262626;
+  padding-top: 72px;
+}
+.contact h2 {
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.contact p {
+  width: 369px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.contact .form_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .form_wrap .form_data {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  max-width: 500px;
+}
+.contact .form_wrap .form_data input {
+  background-color: rgba(0, 196, 196, 0.5);
+  margin-bottom: 15px;
+  border: 0;
+  border-left: 5px solid transparent;
+  height: 50px;
+  font-size: 15px;
+  line-height: 50px;
+  padding-left: 15px;
+  color: #fff;
+  outline-style: none;
+}
+.contact .form_wrap .form_data input::placeholder {
+  color: #fff;
+}
+.contact .form_wrap .form_data input:focus {
+  border-left: 5px solid #355b82;
+  font-weight: bold;
+  background-color: #00c4c4;
+  transition: all 0.2s ease;
+}
+.contact .form_wrap .form_data textarea[name=message] {
+  height: 250px;
+  background-color: rgba(0, 196, 196, 0.5);
+  color: #fff;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  border-left: 5px solid transparent;
+  outline: none;
+  padding: 20px 0 0 15px;
+  margin-bottom: 15px;
+}
+.contact .form_wrap .form_data textarea[name=message]:focus {
+  border-left: 5px solid #355b82;
+  font-weight: bold;
+  background-color: #00c4c4;
+  transition: all 0.2s ease;
+}
+.contact .form_wrap .form_data textarea[name=message]::placeholder {
+  color: #fff;
+}
+.contact .form_wrap .form_data button {
+  height: 50px;
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: rgba(0, 196, 196, 0.5);
+  border: 1px solid rgba(0, 196, 196, 0.5);
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 55px;
+  transition: all 0.2s ease;
+}
+.contact .form_wrap .form_data button:hover {
+  background: #fff;
+  transition: all 0.2s ease;
+  color: #00c4c4;
+}
+.contact .form_wrap .form_data button:active {
+  color: #355b82;
+  background-color: #eee;
+}
+.contact .form_wrap .contact_info {
+  width: 45%;
+  max-width: 500px;
+  margin-top: -4px;
+}
+.contact .form_wrap .contact_info dt {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contact .form_wrap .contact_info dd {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 16px;
+}
