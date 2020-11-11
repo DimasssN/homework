@@ -33,7 +33,7 @@ function speed(){
 function converter(){
     let d = prompt('Enter dollars value:');
     let koef = 1.3;
-    let res = parseInt(d) / 1.3;
+    let res = parseInt(d) / koef;
     alert(`Euro: ${res.toFixed(2)}`)
 }
 
