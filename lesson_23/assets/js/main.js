@@ -190,7 +190,6 @@ function task9(){
 }
 
 function task10(){
-    debugger;
     let day = document.getElementById('number_10_1').value,
         mounth = document.getElementById('number_10_2').value,
         year = document.getElementById('number_10_3').value;
