@@ -38,6 +38,9 @@ function task2(){
             res = '$';
             break;
         case 5:
+            res = '%';
+            break;
+        case 6:
             res = '^';
             break;
         case 7:
@@ -89,7 +92,7 @@ function task5(){
     let num = document.getElementById("number5").value;
         num = parseInt(num);
     let res = '';
-    if (((num - num % 1000) / 1000) == num % 100){
+    if (((num - num % 1000) / 1000) == ((num%10)*10 + (num%100 - num%10)/10)){
         res = 'It is palindrome';
     }
     else {
@@ -187,42 +190,98 @@ function task9(){
 }
 
 function task10(){
-    
+    debugger;
     let day = document.getElementById('number_10_1').value,
         mounth = document.getElementById('number_10_2').value,
         year = document.getElementById('number_10_3').value;
         day = parseInt(day);
         mounth = parseInt(mounth);
         year = parseInt(year);
-    let nextDate = ''; 
+    let nextDate = '';
     if(day>31){
         alert('Invalid date!');
     }
     if(mounth>12){
         alert('Invalid date!');
     }
-    if (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0) || (mounth == 2) || day==29){
-        day = 1;
-        mounth = mounth + 1;
-        nextDate = day + '-' + mounth + '-' + year;
-    }
-    if(day==30 && (mounth==4 || mounth==6 || mounth==9 || mounth==11)){
-        day = 1;
-        nextDate = day + '-' + mounth + '-' + year;
-    }  
-    else if(day==31 && (mounth==1 || mounth==3 || mounth==5 || mounth==7 || mounth==8 || mounth==10)){
-        mounth = mounth + 1;
-        day = 1;
-        nextDate = day + '-' + mounth + '-' + year;
-    }  
-    if((day == 31) && (mounth == 12)){
-        nextDate = day + '-' + mounth + '-' + year;
-    }
-    // if(mounth==2 && day==28){
-    //     day = 1;
-    //     mounth = mounth + 1;
+    // if(day<10){
+    //     day = '0' + day;
     // }
+    // if(mounth<10){
+    //     mounth = '0' + mounth;
+    // }
+    if ((((year%4 == 0) && (year%100 != 0)) || (year%400 == 0)) && (day==29 && mounth==2)){
+        day = 0;
+        mounth = 3;
+        nextDate = day + '-' + mounth + '-' + year;
+    }
+    if(day>28 && mounth==2){
+        alert('Invalid date!');
+    }
+    if(day==30 && mounth==4){
+        day = 1;
+        mounth = mounth + 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    if(day==30 && mounth==6){
+        day = 1;
+        mounth = mounth+1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    if(day==30 && mounth==9){
+        day = 1;
+        mounth = mounth+1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    if(day==30 && mounth==11){
+        day = 1;
+        mounth = mounth+1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==1){
+        day = 1;
+        mounth = mounth + 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==3){
+        mounth = mounth + 1;
+        day = 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==5){
+        mounth = mounth + 1;
+        day = 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==7){
+        mounth = mounth + 1;
+        day = 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==8){
+        mounth = mounth + 1;
+        day = 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    else if(day==31 && mounth==10){
+        mounth = mounth + 1;
+        day = 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }  
+    if(day==31 && mounth==12){
+        day = 0;
+        mounth = 1;
+        year = year + 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }
+    if(day==28 && mounth==2){
+        day = 1;
+        mounth = mounth + 1;
+        nextDate = day + '-' + mounth + '-' + year;
+    }
+    else{
+        nextDate = day + 1 + '-' + mounth + '-' + year;
+    }
     let res = nextDate;
     document.getElementById("result_10").innerText = res;
-    prompt("Я запутался в этой функции, разберем на занятии.");
 }
