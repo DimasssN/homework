@@ -34,7 +34,7 @@ const app = Vue.createApp({
                 if(reset_page){
                     this.page = 1;
                 }
-                axios.get('http://www.omdbapi.com/?apikey='+OMDB_API_KEY+'&s='+this.search_query+'&page='+this.page)
+                axios.get('https://www.omdbapi.com/?apikey='+OMDB_API_KEY+'&s='+this.search_query+'&page='+this.page)
                 .then((resp)=>{
                     // console.log(JSON.stringify(resp.data.Search));
                     if(resp.data.Response=='True'){
