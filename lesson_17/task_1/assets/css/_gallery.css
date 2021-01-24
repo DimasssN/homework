@@ -1,0 +1,92 @@
+.gallery {
+  background: #ffe92f;
+  padding: 80px 0 120px;
+}
+.gallery h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+.gallery p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 28px;
+  margin-bottom: 42px;
+  font-size: 17px;
+}
+.gallery .gallery_wrap .row_1 {
+  display: flex;
+  justify-content: space-between;
+  height: 549px;
+  margin-bottom: 30px;
+}
+.gallery .gallery_wrap .row_1 .col_1 {
+  width: calc(66.6666% - 12px);
+  max-width: 770px;
+}
+.gallery .gallery_wrap .row_1 .col_1 .img_1 {
+  background-image: url(../images/gallery/img_1.jpg);
+}
+.gallery .gallery_wrap .row_1 .col_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(33.3333% - 15px);
+  max-width: 370px;
+}
+.gallery .gallery_wrap .row_1 .col_2 .img_2 {
+  background-image: url(../images/gallery/img_2.jpg);
+  height: calc(50% - 15px);
+}
+.gallery .gallery_wrap .row_1 .col_2 .img_3 {
+  background-image: url(../images/gallery/img_3.jpg);
+  height: calc(50% - 15px);
+}
+.gallery .gallery_wrap .row_2 {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.gallery .gallery_wrap .row_2 .img_4 {
+  background-image: url(../images/gallery/img_4.jpg);
+  width: calc(50% - 15px);
+}
+.gallery .gallery_wrap .row_2 .img_5 {
+  background-image: url(../images/gallery/img_5.jpg);
+  width: calc(50% - 15px);
+}
+.gallery .gallery_wrap .img {
+  overflow: hidden;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 2px 5px 0px #000;
+}
+.gallery a {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 55px;
+  background: #5585a2;
+  border: 1px solid #5585a2;
+  box-shadow: 0px 2px 5px 0px #000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 55px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.gallery a:hover {
+  background: #fff;
+  color: #5585a2;
+  transition: all 0.2s ease;
+}
